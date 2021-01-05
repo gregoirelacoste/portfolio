@@ -7,3 +7,4 @@ build
 /front/graphql/genTypes.ts
 /server/graphql/genTypes.ts
 /graphql.schema.json
+./.idea
