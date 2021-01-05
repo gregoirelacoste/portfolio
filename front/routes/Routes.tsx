@@ -1,18 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../Views/Home";
-import MainNav from "../components/MainNav";
+import Layout from "../Layout";
+import About from "../Views/About";
 
 const Routes = () => {
   return (
     <Router>
-      <MainNav />
-      <Switch>
-        <Route path="/about">
-          <p>About level one</p>
-        </Route>
-        <Route path="/" component={Home} />
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/a-propos" component={About} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Layout>
     </Router>
   );
 };
