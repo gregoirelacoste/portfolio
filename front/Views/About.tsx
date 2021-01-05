@@ -53,7 +53,7 @@ const About = () => {
         Vous souhaitez récupérer mon site et mon boilerplate React / Node ?
       </Typography>
       <Typography variant={"body1"} component={"h1"}>
-        Venez faire un tour sur la page github public du projet
+        Venez faire un tour sur la page github publique du projet
       </Typography>
       <br />
       <Button
