@@ -1,13 +1,14 @@
 import { Box, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { PATHS } from "../../config/paths";
 
 const useStyle = makeStyles({
   profil: {
     height: "400px",
     width: "400px",
     border: "10px solid black",
-    background: `center / cover no-repeat url("../../../contents/img/profil.jpg")`,
+    background: `center / cover no-repeat url("${PATHS.APP_ROOT}contents/img/profil.jpg")`,
   },
 });
 
