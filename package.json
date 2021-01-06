@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev:server": "ts-node-dev --debug --inspect -- server/index.ts",
-    "build:server": "tsc && shx rm -rf ./build/front",
+    "build:server": "tsc && shx cp -r ./contents ./build && shx rm -rf ./build/front",
     "build:front": "webpack --config webpack/webpack.config.ts --color -p --progress --mode=production",
     "build": "npm run build:server && npm run build:front:noprogress",
     "build:front:noprogress": "webpack --config webpack/webpack.config.ts -p --mode=production",
@@ -69,7 +69,6 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
-    "@types/jest": "^26.0.15",
     "@apollo/client": "^3.2.2",
     "@graphql-codegen/cli": "1.17.10",
     "@material-ui/core": "^4.11.0",
@@ -77,6 +76,7 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@sentry/cli": "^1.59.0",
     "@sentry/react": "^5.27.4",
+    "@types/jest": "^26.0.15",
     "@types/webpack-dev-middleware": "^3.7.2",
     "apollo-server-express": "^2.18.1",
     "concurrently": "^5.3.0",
@@ -84,6 +84,7 @@
     "dotenv": "^8.2.0",
     "graphql": "^15.3.0",
     "helmet": "^4.1.1",
+    "moment": "^2.29.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.2.1",

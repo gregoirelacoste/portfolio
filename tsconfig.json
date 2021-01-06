@@ -39,10 +39,9 @@
     "./front/**/*",
     "./server/**/*",
     "./config/**/*",
-    "./webpack/**/*"
+    "./webpack/**/*",
+    "./domain/**/*.ts"
   ]
 }
-//"./routes/**/*.ts"
 //    "./services/**/*.ts",
 //    "./types/**/*.ts",
-//    "./domain/**/*.ts",
