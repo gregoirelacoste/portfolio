@@ -1,13 +1,10 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@material-ui/core";
-import useMainStyles from "../theme/mainStyles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const About = () => {
-  const mainClasses = useMainStyles();
-
   return (
-    <Container maxWidth={"lg"} className={mainClasses.container}>
+    <Container maxWidth={"lg"}>
       <Box m={3} />
       <Typography variant={"h4"} component={"h1"}>
         Developpeur Freelance - Node / React
@@ -65,6 +62,7 @@ const About = () => {
       >
         GitHub
       </Button>
+      <Box m={5} />
     </Container>
   );
 };

@@ -3,14 +3,24 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { config } from "../../server/config";
 
-const useStyle = makeStyles({
+const useStyle = makeStyles((theme) => ({
   profil: {
-    height: "400px",
-    width: "400px",
     border: "10px solid black",
     background: `center / cover no-repeat url("${config.CONTENTS_PATH}/img/profil.jpg")`,
+    [theme.breakpoints.down("sm")]: {
+      height: "200px",
+      width: "200px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "230px",
+      width: "230px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "400px",
+      width: "400px",
+    },
   },
-});
+}));
 
 const Profil = () => {
   const classes = useStyle();

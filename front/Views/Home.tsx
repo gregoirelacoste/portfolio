@@ -3,20 +3,20 @@ import "../styles.css";
 import { Container, Grid } from "@material-ui/core";
 import Title from "../components/Title";
 import Profil from "../components/Profil";
-import Footer from "../components/Footer";
 import useMainStyles from "../theme/mainStyles";
+import Footer from "../components/Footer";
 
 const Home = () => {
-  const mainClasses = useMainStyles();
+  const { mainContainer } = useMainStyles();
 
   return (
-    <Container maxWidth={"xl"} className={mainClasses.container}>
+    <Container maxWidth={"xl"}>
       <Grid
         container
         justify="center"
         alignContent={"center"}
         alignItems={"center"}
-        className={mainClasses.container}
+        className={mainContainer}
       >
         <Title />
         <Profil />

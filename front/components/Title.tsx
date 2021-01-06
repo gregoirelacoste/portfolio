@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyle = makeStyles((theme) => ({
   title: {
     [theme.breakpoints.down("lg")]: {
-      padding: "30px",
+      padding: theme.spacing(3),
     },
   },
   mainText: {
@@ -21,7 +21,7 @@ const Title = () => {
   const classes = useStyle();
   return (
     <Grid item lg={6}>
-      <Grid container direction="column" justify="center">
+      <Grid container direction="column" justify="flex-start">
         <Grid item>
           <div className={classes.title}>
             <Typography

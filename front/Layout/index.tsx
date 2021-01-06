@@ -7,11 +7,13 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const { app } = useMainStyles();
+  const { app, page } = useMainStyles();
   return (
     <div className={app}>
-      <MainNav />
-      {children}
+      <div className={page}>
+        <MainNav />
+        {children}
+      </div>
     </div>
   );
 };

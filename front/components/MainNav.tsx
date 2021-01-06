@@ -1,25 +1,13 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import useMainStyles from "../theme/mainStyles";
+import { style } from "../theme/typography";
 
 const useStyle = makeStyles((theme) => ({
-  main: {
-    width: "100%",
-    textAlign: "right",
-  },
-  nav: {
+  ul: {
     padding: theme.spacing(3),
-    "& a": {
-      color: theme.palette.primary.main,
-      textDecoration: "none",
-      fontSize: "18px",
-      fontFamily: "Rubik Mono One",
-      transition: "0.7s",
-      "&:hover": {
-        color: theme.palette.secondary.main,
-      },
-    },
-
+    "& a": style.a,
     "& li": {
       display: "inline-block",
       paddingRight: "20px",
@@ -28,10 +16,11 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 const MainNav = () => {
+  const { nav } = useMainStyles();
   const classes = useStyle();
   return (
-    <nav className={classes.main}>
-      <ul className={classes.nav}>
+    <nav className={nav}>
+      <ul className={classes.ul}>
         <li>
           <Link to="/">Accueil</Link>
         </li>

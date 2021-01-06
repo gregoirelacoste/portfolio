@@ -9,7 +9,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const CompressionPlugin = require("compression-webpack-plugin");
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const WatchMissingNodeModulesPlugin = require("react-dev-utils/WatchMissingNodeModulesPlugin");
 
 const plugins = (env: Env) => {
@@ -24,6 +23,8 @@ const plugins = (env: Env) => {
     new WatchMissingNodeModulesPlugin(path.resolve("node_modules")),
   ];
   if (env === "development") {
+    const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+
     plugins.push(
       new ForkTsCheckerWebpackPlugin(),
       new webpack.HotModuleReplacementPlugin(),

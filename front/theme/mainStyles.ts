@@ -1,15 +1,31 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 
+const footer = { md: "150px", xs: "220px" };
+const nav = { md: "80px" };
+
 const useMainStyles = makeStyles((theme: Theme) => ({
   app: {
     background: theme.palette.common.black,
     color: "#fff",
-    height: "100vh",
   },
-  container: {
-    height: "calc(100% - 100px)",
+  nav: {
+    width: "100%",
+    textAlign: "right",
+    height: nav.md,
+  },
+  page: {
+    minHeight: "100vh",
+  },
+  mainContainer: {
+    height: `calc(100vh - ${footer.md} - ${nav.md})`,
     [theme.breakpoints.down("xs")]: {
-      height: "calc(100% - 170px)",
+      height: `calc(100vh% - ${footer.xs} - ${nav.md})`,
+    },
+  },
+  footer: {
+    height: footer.md,
+    [theme.breakpoints.down("xs")]: {
+      height: footer.xs,
     },
   },
 }));
