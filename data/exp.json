@@ -1,0 +1,42 @@
+[
+  {
+    "debut": 2017,
+    "fin": "-",
+    "entreprise": "Level One",
+    "ville": "Albi",
+    "poste": "Développeur Freelance",
+    "mission": "- Développement site web/ application : vitrine, ecommerce, communautaire, app métiers\n- Conseil et formation en digital"
+  },
+  {
+    "debut": 2017,
+    "fin": "-",
+    "entreprise": "Enseignant vacataire université Toulouse II",
+    "ville": "Toulouse",
+    "poste": "2 UE auprès des Master INES \n",
+    "mission": "- Cours WEB DESIGN UI /UX\n- Cours HTML / CSS & CMS (Wordpress)"
+  },
+  {
+    "debut": 2014,
+    "fin": "2017",
+    "entreprise": "Level One",
+    "ville": "Albi",
+    "poste": "Agence de communication digitale",
+    "mission": "- Développement site web : vitrine, ecommerce, communautaire, concours, jeu...\n- Conseil et formation en digital\n- Community management\n- Stratégie digital\n- SEO / SEA\n- Gestion de projet"
+  },
+  {
+    "debut": 2011,
+    "fin": "2014",
+    "entreprise": "NineteenGroupe",
+    "ville": "Paris",
+    "poste": "Responsable Stratégie Digitale",
+    "mission": "- Développer le pôle digital de l'agence\n- Clients : France Télé, Arte, Bayard, Soleil, Carolin, Evian..."
+  },
+  {
+    "debut": 2008,
+    "fin": "2011",
+    "entreprise": "Dagobert - agence digitale",
+    "ville": "Paris",
+    "poste": "Chef de projet et responsable SMO",
+    "mission": "- Concevoir, mettre en place des plateformes web communautaire\n- Clients : Citroën, Nikon, GDF, Cacharel..."
+  }
+]

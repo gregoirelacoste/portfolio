@@ -31,6 +31,9 @@ const MainNav = () => {
         <li>
           <Link to={LINKS.ref}>Références</Link>
         </li>
+        <li>
+          <Link to={LINKS.exp}>Expériences</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -5,6 +5,7 @@ import Layout from "../Layout";
 import About from "../Views/About";
 import References from "../Views/References";
 import { LINKS } from "../config";
+import Experiences from "../Views/Experiences";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
         <Switch>
           <Route path={LINKS.about} component={About} />
           <Route path={LINKS.ref} component={References} />
+          <Route path={LINKS.exp} component={Experiences} />
           <Route path={LINKS.home} component={Home} />
         </Switch>
       </Layout>
