@@ -1,0 +1,140 @@
+[
+  {
+    "date": 2020,
+    "client": "Arto - Kiwi",
+    "details": "Centre Culturel de Ramonville,",
+    "projet": "un site vitrine et un agenda d'évenement",
+    "techno": "Wordpress sur mesure, plugins ACF",
+    "remarque": "En équipe",
+    "role": "Developpment wordpress, custom thème "
+  },
+  {
+    "date": 2020,
+    "client": "SNSA",
+    "details": "Syndicat nationnale des société d'assistance,",
+    "projet": "site vitrine, backoffice et centre documentaire",
+    "url": "https://snsa.asso.fr/",
+    "techno": "Site sur mesure React/Node - Headless Strapi, react admin",
+    "remarque": "En équipe",
+    "role": "Mise en place de la structur du sur front (moin d'intégration) dev jalil et inté antoine en équipe et réalisation du dev / front du backoffice et centre documentaire "
+  },
+  {
+    "date": 2020,
+    "client": "Segwigck | declaform",
+    "details": "Segwigck - cabient d'expertise en assurance",
+    "projet": "Declaform : outil de création de formulaire de déclaration de sinistre à l'assurance, backoffice et front à destinations des clients du cabinet",
+    "techno": "PWA React / Node, material ui - Headless Strapi",
+    "remarque": "Seul, plus en ligne\nGestion des serveurs, mails",
+    "role": "Dev, intégration, ui/ux"
+  },
+  {
+    "date": 2020,
+    "client": "Declarer Sinistre",
+    "details": "Side Project",
+    "projet": "Générateur de courrier de déclaration de sinistre à destination des particuliers",
+    "url": "https://declarer-sinistre.com",
+    "techno": "React/Node, prisma, appolo graphql, express --> mise en place d'un boiler plate",
+    "remarque": "Boiler plate en prime, en partenariat avec deux pote expert en assurance\nGestion des serveurs, mails, blog...",
+    "role": "Dev, intégration, ui/ux"
+  },
+  {
+    "date": 2020,
+    "client": "SnapClaim",
+    "details": "Service mettant à disposition un poul de photographe pro pouvant être mandaté pour la réalisation de constat de sinistre",
+    "projet": "MVP, équivalent à un WeTransfer",
+    "url": "https://snapclaim.cleverapps.io/",
+    "techno": "React/Node, redux",
+    "remarque": "En équipe\nGestion des serveurs, mails, vitrine...",
+    "role": "Gestion de projet, dev"
+  },
+  {
+    "date": 2020,
+    "client": "France Challenges",
+    "details": "Outil pédagogique pour la mise en place d'opération de vente focalisée sur l'accompagnement et l'utilisation d'outils digitaux variés et ludiques. ",
+    "projet": "Mise en place d'un outil proposant : un système LMS, un e-commerce, un système de quiz, un accès multi-role avec différents droit en front, un backoffice, relié au CRM (zoho)",
+    "url": "https://app.france-challenges.com",
+    "techno": "Create react app/Node, redux, grahpql, headless Strapi",
+    "remarque": "3000 users, au moin 250 quotdien, 15000 commandes en 2020\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
+    "role": "Dev, intégration, ui/ux"
+  },
+  {
+    "date": 2019,
+    "client": "Claudine Petite Maman",
+    "details": "Site de mise en relation de nouvou et de parents",
+    "projet": "Refonte du site",
+    "url": "https://www.claudinepetitemaman.fr/",
+    "techno": "Php",
+    "remarque": "Travail en équipe",
+    "role": "Gestion de ticket back et front"
+  },
+  {
+    "date": 2019,
+    "client": "Elysie",
+    "details": "Sac à dos connecté et geolocalisé",
+    "projet": "Création de l'app",
+    "url": "",
+    "techno": "React / Node",
+    "remarque": "Travail en équipe",
+    "role": "Gestion de projet"
+  },
+  {
+    "date": 2019,
+    "client": "France Challenges",
+    "details": "Outil pédagogique pour la mise en place d'opération de vente focalisée sur l'accompagnement et l'utilisation d'outils digitaux variés et ludiques. ",
+    "projet": "MVP",
+    "url": "https://app.france-challenges.com",
+    "techno": "Create react app/Node, redux, grahpql, headless Strapi",
+    "remarque": "1500 users\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
+    "role": "Dev, intégration, ui/ux"
+  },
+  {
+    "date": 2019,
+    "client": "Ecole des mines",
+    "details": "Ecole d'ingénieur à Albi",
+    "projet": "Mise en place de newsletter, externe, interne, évenementiel",
+    "url": "",
+    "techno": "Mailjet MJML",
+    "remarque": "",
+    "role": "Ui et intégration"
+  },
+  {
+    "date": 2018,
+    "client": "NplusI",
+    "details": "Réseau d'école d'ingénieur pour la promotion à l'étranger",
+    "projet": "Création charte graphique, intégration",
+    "url": "https://www.nplusi.com/",
+    "techno": "HTML/CSS",
+    "remarque": "Dev en interne, en équipe avec graphiste",
+    "role": "Gestion de projet et Intégration"
+  },
+  {
+    "date": 2017,
+    "client": "TBC Innovation",
+    "details": "Cabinet d'étude en bâtiement",
+    "projet": "Site vitrine",
+    "url": "http://www.tbcinnovation.fr/",
+    "techno": "Wordpress DIVI",
+    "remarque": "En équipe avec graphiste",
+    "role": "Intégration, mise en place"
+  },
+  {
+    "date": 2017,
+    "client": "Pyrénnées Ascensseur",
+    "details": "Assitance Réparation d'ascenceur dans le sud ouest",
+    "projet": "Mise en place d'un mini Progiciel mettant en relation maitrise d'oeuvre, maitrise d'ouvrage et technicien",
+    "url": "https://www.monascenseur.fr/",
+    "techno": "Php, bootstrap",
+    "remarque": "",
+    "role": "Développement / intégration"
+  },
+  {
+    "date": 2016,
+    "client": "Voyage St Barth",
+    "details": "Ferry entre saint martin et st Barthelemy",
+    "projet": "Refont du site intert",
+    "url": "https://voy12.com",
+    "techno": "Wordpress, DIVI",
+    "remarque": "",
+    "role": "Dev, intégration, ui/ux"
+  }
+]

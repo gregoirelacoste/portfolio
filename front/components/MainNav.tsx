@@ -3,6 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import useMainStyles from "../theme/mainStyles";
 import { style } from "../theme/typography";
+import { LINKS } from "../config";
 
 const useStyle = makeStyles((theme) => ({
   ul: {
@@ -22,10 +23,13 @@ const MainNav = () => {
     <nav className={nav}>
       <ul className={classes.ul}>
         <li>
-          <Link to="/">Accueil</Link>
+          <Link to={LINKS.home}>Accueil</Link>
         </li>
         <li>
-          <Link to="/a-propos">A propos</Link>
+          <Link to={LINKS.about}>A propos</Link>
+        </li>
+        <li>
+          <Link to={LINKS.ref}>Références</Link>
         </li>
       </ul>
     </nav>

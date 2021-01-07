@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Container maxWidth={"lg"}>
       <Box m={3} />
-      <Typography variant={"h4"} component={"h1"}>
+      <Typography variant={"h2"} component={"h1"}>
         Developpeur Freelance - Node / React
       </Typography>
       <Typography component={"p"}>
