@@ -14,6 +14,7 @@ const useStyle = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     background: theme.palette.primary.main,
     transition: "0.5s",
+    zIndex: 999,
     "&:hover": {
       background: theme.palette.secondary.light,
       color: theme.palette.primary.main,

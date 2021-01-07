@@ -5,8 +5,12 @@ const nav = { md: "80px" };
 const useMainStyles = makeStyles((theme: Theme) => {
   return {
     app: {
-      background: theme.palette.common.black,
+      background: theme.palette.primary.dark,
       color: "#fff",
+    },
+    pageLayout: {
+      color: "#fff",
+      padding: theme.spacing(5),
     },
     nav: {
       width: "100%",

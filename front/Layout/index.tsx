@@ -5,7 +5,7 @@ import IconBtn from "../../services/components/IconBtn";
 import { SendRounded } from "@material-ui/icons";
 
 interface LayoutProps {
-  children: ReactElement;
+  children: ReactElement | ReactElement[];
 }
 
 const Layout = ({ children }: LayoutProps) => {

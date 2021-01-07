@@ -1,19 +1,13 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import exps from "../../data/exp.json";
-import { makeStyles } from "@material-ui/core/styles";
 import Exp from "../components/Exp";
-
-const useClasses = makeStyles((theme) => ({
-  main: {
-    padding: theme.spacing(5),
-  },
-}));
+import useMainStyles from "../theme/mainStyles";
 
 const Experiences = () => {
-  const classes = useClasses();
+  const classes = useMainStyles();
   return (
-    <Container maxWidth={"xl"} className={classes.main}>
+    <Container maxWidth={"xl"} className={classes.pageLayout}>
       <Box m={3} />
       <Typography component={"h1"} variant={"h1"}>
         Expériences

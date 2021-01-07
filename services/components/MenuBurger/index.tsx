@@ -11,7 +11,7 @@ import { style } from "../../../front/theme/typography";
 
 const useStyle = makeStyles((theme) => ({
   main: {
-    background: theme.palette.secondary.dark,
+    background: theme.palette.primary.dark,
     height: "100vh",
     width: "100%",
     position: "absolute",

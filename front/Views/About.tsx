@@ -1,10 +1,19 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useClasses = makeStyles((theme) => ({
+  main: {
+    padding: theme.spacing(5),
+  },
+}));
 
 const About = () => {
+  const classes = useClasses();
+
   return (
-    <Container maxWidth={"lg"} style={{ padding: "1rem 0 1rem 0" }}>
+    <Container maxWidth={"lg"} className={classes.main}>
       <Typography variant={"h2"} component={"h1"}>
         Developpeur Freelance - Node / React
       </Typography>
