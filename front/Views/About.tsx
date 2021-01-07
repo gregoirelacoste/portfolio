@@ -4,8 +4,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const About = () => {
   return (
-    <Container maxWidth={"lg"}>
-      <Box m={3} />
+    <Container maxWidth={"lg"} style={{ padding: "1rem 0 1rem 0" }}>
       <Typography variant={"h2"} component={"h1"}>
         Developpeur Freelance - Node / React
       </Typography>

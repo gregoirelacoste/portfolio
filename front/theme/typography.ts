@@ -25,12 +25,12 @@ export const style = {
 const typography = {
   fontFamily: "Raleway, sans serif",
   h1: {
-    fontSize: "99px",
+    fontSize: "6rem",
     fontFamily: "Rubik Mono One",
   },
-  h2: { fontSize: "75px", fontFamily: "Rubik Mono One" },
-  h3: { fontSize: "60px", color: palette.secondary.main },
+  h2: { fontSize: "5rem", fontFamily: "Rubik Mono One" },
+  h3: { fontSize: "4rem", color: palette.secondary.main },
   h4: { fontSize: "1.2rem", fontFamily: "Rubik Mono One" },
-  body1: { fontSize: "20px", color: "white" },
+  body1: { fontSize: "1.2rem", color: "white" },
 };
 export default typography;
