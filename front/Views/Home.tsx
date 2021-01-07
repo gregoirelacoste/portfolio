@@ -1,28 +1,29 @@
 import React from "react";
 import "../styles.css";
-import { Container, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Title from "../components/Title";
 import Profil from "../components/Profil";
 import useMainStyles from "../theme/mainStyles";
 import Footer from "../components/Footer";
+import PageLayout from "../Layout/PageLayout";
 
 const Home = () => {
-  const { mainContainer } = useMainStyles();
+  const { homeContainer } = useMainStyles();
 
   return (
-    <Container maxWidth={"xl"}>
+    <PageLayout>
       <Grid
         container
         justify="center"
         alignContent={"center"}
         alignItems={"center"}
-        className={mainContainer}
+        className={homeContainer}
       >
         <Title />
         <Profil />
       </Grid>
       <Footer />
-    </Container>
+    </PageLayout>
   );
 };
 

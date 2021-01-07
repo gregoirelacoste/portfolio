@@ -1,19 +1,11 @@
 import React from "react";
-import { Box, Button, Container, Typography } from "@material-ui/core";
+import { Box, Button, Typography } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useClasses = makeStyles((theme) => ({
-  main: {
-    padding: theme.spacing(5),
-  },
-}));
+import PageLayout from "../Layout/PageLayout";
 
 const About = () => {
-  const classes = useClasses();
-
   return (
-    <Container maxWidth={"lg"} className={classes.main}>
+    <PageLayout maxWidth={"lg"}>
       <Typography variant={"h2"} component={"h1"}>
         Developpeur Freelance - Node / React
       </Typography>
@@ -71,7 +63,7 @@ const About = () => {
         GitHub
       </Button>
       <Box m={5} />
-    </Container>
+    </PageLayout>
   );
 };
 export default About;

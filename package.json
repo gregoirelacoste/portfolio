@@ -88,6 +88,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.2.1",
+    "react-indiana-drag-scroll": "^1.8.0",
     "react-router-dom": "^5.2.0",
     "react-spring": "^8.0.27",
     "shx": "^0.3.2",

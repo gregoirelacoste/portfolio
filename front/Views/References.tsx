@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   Grid,
   Typography,
   useMediaQuery,
@@ -10,14 +9,13 @@ import React from "react";
 import refs from "../../data/refs.json";
 import Ref from "../components/Ref";
 import { RefType } from "../../domain/references";
-import useMainStyles from "../theme/mainStyles";
+import PageLayout from "../Layout/PageLayout";
 
 const References = () => {
-  const classes = useMainStyles();
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Container maxWidth={"xl"} className={classes.pageLayout}>
+    <PageLayout maxWidth={"xl"}>
       <Box m={3} />
       <Typography component={"h1"} variant={"h1"}>
         {mobile ? "Mes Réfs" : "Dernières références"}
@@ -27,7 +25,7 @@ const References = () => {
           <Ref reference={ref} />
         ))}
       </Grid>
-    </Container>
+    </PageLayout>
   );
 };
 export default References;

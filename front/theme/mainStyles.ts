@@ -11,25 +11,26 @@ const useMainStyles = makeStyles((theme: Theme) => {
     pageLayout: {
       color: "#fff",
       padding: theme.spacing(5),
+      height: "100%",
+    },
+    homeContainer: {
+      height: `calc(100% - ${footer.md})`,
     },
     nav: {
       width: "100%",
       textAlign: "right",
       height: nav.md,
     },
-    page: {
-      minHeight: "100vh",
-    },
-    mainContainer: {
-      height: `calc(100vh - ${footer.md} - ${nav.md})`,
-      [theme.breakpoints.down("xs")]: {
-        height: `calc(100vh% - ${footer.xs} - ${nav.md})`,
-      },
-    },
     footer: {
       height: footer.md,
       [theme.breakpoints.down("xs")]: {
         height: footer.xs,
+      },
+    },
+    scrollContainer: {
+      height: `calc(100vh - ${nav.md})`,
+      [theme.breakpoints.down("md")]: {
+        height: "100vh",
       },
     },
   };

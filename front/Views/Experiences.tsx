@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   Grid,
   Typography,
   useMediaQuery,
@@ -9,14 +8,13 @@ import {
 import React from "react";
 import exps from "../../data/exp.json";
 import Exp from "../components/Exp";
-import useMainStyles from "../theme/mainStyles";
+import PageLayout from "../Layout/PageLayout";
 
 const Experiences = () => {
-  const classes = useMainStyles();
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Container maxWidth={"xl"} className={classes.pageLayout}>
+    <PageLayout maxWidth={"xl"}>
       <Box m={3} />
       <Typography component={"h1"} variant={"h1"}>
         {mobile ? "Mes XPs" : "Expériences"}
@@ -26,7 +24,7 @@ const Experiences = () => {
           <Exp exp={exp} />
         ))}
       </Grid>
-    </Container>
+    </PageLayout>
   );
 };
 export default Experiences;
