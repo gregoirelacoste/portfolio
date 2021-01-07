@@ -3,22 +3,17 @@ import useMainStyles from "../theme/mainStyles";
 import MainNav from "../components/MainNav";
 import IconBtn from "../../services/components/IconBtn";
 import { SendRounded } from "@material-ui/icons";
-import ScrollContainer from "react-indiana-drag-scroll";
 
 interface LayoutProps {
   children: ReactElement | ReactElement[];
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const { app, page, scrollContainer } = useMainStyles();
+  const { app, mainContainer } = useMainStyles();
   return (
     <div className={app}>
-      <div className={page}>
-        <MainNav />
-        <ScrollContainer vertical className={scrollContainer}>
-          {children}
-        </ScrollContainer>
-      </div>
+      <MainNav />
+      <div className={mainContainer}>{children}</div>
       <IconBtn
         icon={<SendRounded />}
         position={"BottomRight"}

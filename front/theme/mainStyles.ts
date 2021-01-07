@@ -27,7 +27,8 @@ const useMainStyles = makeStyles((theme: Theme) => {
         height: footer.xs,
       },
     },
-    scrollContainer: {
+    mainContainer: {
+      background: theme.palette.primary.dark,
       height: `calc(100vh - ${nav.md})`,
       [theme.breakpoints.down("md")]: {
         height: "100vh",

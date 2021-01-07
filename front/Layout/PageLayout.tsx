@@ -12,7 +12,7 @@ const PageLayout = ({ children, maxWidth = "xl" }: PageLayoutProps) => {
   const classes = useMainStyles();
 
   return (
-    <ScrollContainer vertical className={classes.scrollContainer}>
+    <ScrollContainer vertical className={classes.mainContainer}>
       <Container maxWidth={maxWidth} className={classes.pageLayout}>
         {children}
       </Container>

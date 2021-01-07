@@ -5,6 +5,7 @@ import useMainStyles from "../theme/mainStyles";
 import { style } from "../theme/typography";
 import { LINKS } from "../config";
 import MenuBurger from "../../services/components/MenuBurger";
+import { Tooltip } from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
   ul: {
@@ -17,6 +18,8 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
+const message = "Pour scroller, utilisez le drag ans drop";
+
 const MainNav = () => {
   const { nav } = useMainStyles();
   const classes = useStyle();
@@ -25,16 +28,24 @@ const MainNav = () => {
       <nav className={nav}>
         <ul className={classes.ul}>
           <li>
-            <Link to={LINKS.home}>Accueil</Link>
+            <Tooltip title={message}>
+              <Link to={LINKS.home}>Accueil</Link>
+            </Tooltip>
           </li>
           <li>
-            <Link to={LINKS.about}>A propos</Link>
+            <Tooltip title={message}>
+              <Link to={LINKS.about}>A propos</Link>
+            </Tooltip>
           </li>
           <li>
-            <Link to={LINKS.ref}>Références</Link>
+            <Tooltip title={message}>
+              <Link to={LINKS.ref}>Références</Link>
+            </Tooltip>
           </li>
           <li>
-            <Link to={LINKS.exp}>Expériences</Link>
+            <Tooltip title={message}>
+              <Link to={LINKS.exp}>Expériences</Link>
+            </Tooltip>
           </li>
         </ul>
       </nav>
