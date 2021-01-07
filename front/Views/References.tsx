@@ -1,4 +1,11 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@material-ui/core";
 import React from "react";
 import refs from "../../data/refs.json";
 import Ref from "../components/Ref";
@@ -7,11 +14,13 @@ import useMainStyles from "../theme/mainStyles";
 
 const References = () => {
   const classes = useMainStyles();
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Container maxWidth={"xl"} className={classes.pageLayout}>
       <Box m={3} />
       <Typography component={"h1"} variant={"h1"}>
-        Dernières références
+        {mobile ? "Mes Réfs" : "Dernières références"}
       </Typography>
       <Grid container spacing={3}>
         {refs.map((ref: RefType) => (
