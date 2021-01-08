@@ -43,7 +43,7 @@ const Title = () => {
               component={"h3"}
               className={classes.mainText}
             >
-              gregoire lacoste
+              grégoire lacoste
             </Typography>
           </div>
         </Grid>

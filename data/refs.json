@@ -3,15 +3,15 @@
     "date": 2020,
     "client": "Arto - Kiwi",
     "details": "Centre Culturel de Ramonville,",
-    "projet": "un site vitrine et un agenda d'évenement",
-    "techno": "Wordpress sur mesure, plugins ACF",
+    "projet": "un site vitrine et un agenda d'évenements",
+    "techno": "Wordpress sur mesure, plugin ACF",
     "remarque": "En équipe",
-    "role": "Developpment wordpress, custom thème "
+    "role": "Développment wordpress et custom thème "
   },
   {
     "date": 2020,
     "client": "SNSA",
-    "details": "Syndicat nationnale des société d'assistance,",
+    "details": "Syndicat national des sociétés d'assistances,",
     "projet": "site vitrine, backoffice et centre documentaire",
     "url": "https://snsa.asso.fr/",
     "techno": "Site sur mesure React/Node - Headless Strapi, react admin",
@@ -21,7 +21,7 @@
   {
     "date": 2020,
     "client": "Segwigck | declaform",
-    "details": "Segwigck - cabient d'expertise en assurance",
+    "details": "Segwigck - cabinet d'expertise en assurance",
     "projet": "Declaform : outil de création de formulaire de déclaration de sinistre à l'assurance, backoffice et front à destinations des clients du cabinet",
     "techno": "PWA React / Node, material ui - Headless Strapi",
     "remarque": "Seul, plus en ligne\nGestion des serveurs, mails",
@@ -40,7 +40,7 @@
   {
     "date": 2020,
     "client": "SnapClaim",
-    "details": "Service mettant à disposition un poul de photographe pro pouvant être mandaté pour la réalisation de constat de sinistre",
+    "details": "Service de mise à disposition de photographes pro dans le cadre de la réalisation de constat de sinistre",
     "projet": "MVP, équivalent à un WeTransfer",
     "url": "https://snapclaim.cleverapps.io/",
     "techno": "React/Node, redux",
@@ -54,13 +54,13 @@
     "projet": "Mise en place d'un outil proposant : un système LMS, un e-commerce, un système de quiz, un accès multi-role avec différents droit en front, un backoffice, relié au CRM (zoho)",
     "url": "https://app.france-challenges.com",
     "techno": "Create react app/Node, redux, grahpql, headless Strapi",
-    "remarque": "3000 users, au moin 250 quotdien, 15000 commandes en 2020\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
+    "remarque": "xxx users, au moins 250 quotdiens, xxx commandes en 2020\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
     "role": "Dev, intégration, ui/ux"
   },
   {
     "date": 2019,
     "client": "Claudine Petite Maman",
-    "details": "Site de mise en relation de nouvou et de parents",
+    "details": "Site de mise en relation de nounous et de parents",
     "projet": "Refonte du site",
     "url": "https://www.claudinepetitemaman.fr/",
     "techno": "Php",
@@ -84,7 +84,7 @@
     "projet": "MVP",
     "url": "https://app.france-challenges.com",
     "techno": "Create react app/Node, redux, grahpql, headless Strapi",
-    "remarque": "1500 users\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
+    "remarque": "xxx users\nDeuxième année (commencé en 2019)\nGestion des serveurs, mails, vitrine...",
     "role": "Dev, intégration, ui/ux"
   },
   {
@@ -119,8 +119,8 @@
   },
   {
     "date": 2017,
-    "client": "Pyrénnées Ascensseur",
-    "details": "Assitance Réparation d'ascenceur dans le sud ouest",
+    "client": "Pyrénnées Ascensseurs",
+    "details": "Assitance et Réparation d'ascenceurs dans le sud ouest",
     "projet": "Mise en place d'un mini Progiciel mettant en relation maitrise d'oeuvre, maitrise d'ouvrage et technicien",
     "url": "https://www.monascenseur.fr/",
     "techno": "Php, bootstrap",
@@ -129,9 +129,9 @@
   },
   {
     "date": 2016,
-    "client": "Voyage St Barth",
-    "details": "Ferry entre saint martin et st Barthelemy",
-    "projet": "Refont du site intert",
+    "client": "Voyager St Barth",
+    "details": "Ferry entre St Martin et St Barthelemy",
+    "projet": "Refonte du site web",
     "url": "https://voy12.com",
     "techno": "Wordpress, DIVI",
     "remarque": "",

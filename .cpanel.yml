@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - npm run build
+    - source /home/levelone/nodevenv/level-one.fr/portfolio/12/bin/activate && cd /home/levelone/level-one.fr/portfolio && npm run build

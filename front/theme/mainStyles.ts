@@ -8,11 +8,7 @@ const useMainStyles = makeStyles((theme: Theme) => {
       background: theme.palette.primary.dark,
       color: "#fff",
     },
-    pageLayout: {
-      color: "#fff",
-      padding: theme.spacing(5),
-      height: "100%",
-    },
+
     homeContainer: {
       height: `calc(100% - ${footer.md})`,
     },
@@ -33,6 +29,11 @@ const useMainStyles = makeStyles((theme: Theme) => {
       [theme.breakpoints.down("md")]: {
         height: "100vh",
       },
+    },
+    pageLayout: {
+      color: "#fff",
+      padding: theme.spacing(5),
+      height: "100%",
     },
   };
 });
