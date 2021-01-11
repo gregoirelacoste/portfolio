@@ -9,6 +9,7 @@ import { LINKS } from "../config";
 import Experiences from "../Views/Experiences";
 import { useTransition, animated } from "react-spring";
 import { springEffect } from "../theme/effect";
+import withTracker from "../../services/googleAnalytics/withTracker";
 
 const Routes = () => {
   return (
@@ -34,10 +35,22 @@ const RoutesEffect = () => {
         return (
           <animated.div key={key} style={props}>
             <Switch location={item}>
-              <Route path={LINKS.about} component={About} />
-              <Route path={LINKS.ref} component={References} />
-              <Route path={LINKS.exp} component={Experiences} />
-              <Route path={LINKS.home} component={Home} />
+              <Route
+                path={LINKS.about}
+                component={withTracker(About, { title: "A propos" })}
+              />
+              <Route
+                path={LINKS.ref}
+                component={withTracker(References, { title: "Références" })}
+              />
+              <Route
+                path={LINKS.exp}
+                component={withTracker(Experiences, { title: "Expériences" })}
+              />
+              <Route
+                path={LINKS.home}
+                component={withTracker(Home, { title: "Accueil" })}
+              />
             </Switch>
           </animated.div>
         );
