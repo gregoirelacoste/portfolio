@@ -28,21 +28,21 @@ const Footer = () => {
         <Grid item sm={6} style={{ textAlign: "center" }}>
           <IconButton
             href={"https://github.com/gregoirelacoste"}
-            color={"primary"}
+            color={"secondary"}
             target={"_blank"}
           >
             <GitHubIcon fontSize="large" />
           </IconButton>
           <IconButton
             href={"https://twitter.com/gregoirelacoste"}
-            color={"primary"}
+            color={"secondary"}
             target={"_blank"}
           >
             <TwitterIcon fontSize="large" />
           </IconButton>
           <IconButton
             href={"https://www.linkedin.com/in/gregoirelacoste/"}
-            color={"primary"}
+            color={"secondary"}
             target={"_blank"}
           >
             <LinkedInIcon fontSize="large" />
