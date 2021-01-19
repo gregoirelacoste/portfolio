@@ -15,7 +15,7 @@ const Ref = ({ reference }: RefProps) => {
           <Typography component={"h2"} variant={"h3"} display={"inline"}>
             {reference.client}
           </Typography>
-          <Typography component={"h2"} variant={"h4"} display={"inline"}>
+          <Typography component={"p"} variant={"body1"} display={"inline"}>
             {" "}
             {reference.date}
           </Typography>

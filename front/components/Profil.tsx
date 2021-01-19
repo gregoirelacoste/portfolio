@@ -5,7 +5,7 @@ import { config } from "../../server/config";
 
 const useStyle = makeStyles((theme) => ({
   profil: {
-    border: "10px solid black",
+    border: "4px solid " + theme.palette.neutral.dark,
     background: `center / cover no-repeat url("${config.CONTENTS_PATH}/img/profil.jpg")`,
     [theme.breakpoints.down("sm")]: {
       height: "200px",

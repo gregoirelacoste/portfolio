@@ -20,8 +20,8 @@ const Experiences = () => {
         {mobile ? "Mes XPs" : "Expériences"}
       </Typography>
       <Grid container spacing={3}>
-        {exps.map((exp) => (
-          <Exp exp={exp} />
+        {exps.map((exp, i) => (
+          <Exp key={i} exp={exp} />
         ))}
       </Grid>
     </PageLayout>

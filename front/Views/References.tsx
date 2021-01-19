@@ -21,8 +21,8 @@ const References = () => {
         {mobile ? "Mes Réfs" : "Dernières références"}
       </Typography>
       <Grid container spacing={3}>
-        {refs.map((ref: RefType) => (
-          <Ref reference={ref} />
+        {refs.map((ref: RefType, i: number) => (
+          <Ref key={i} reference={ref} />
         ))}
       </Grid>
     </PageLayout>

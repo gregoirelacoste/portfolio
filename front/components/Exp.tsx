@@ -5,7 +5,7 @@ interface ExpProps {
   exp: {
     entreprise: string;
     debut: number;
-    fin: number | string;
+    fin?: number | string;
     ville: string;
     poste: string;
     mission: string;
@@ -17,9 +17,9 @@ const Exp = ({ exp }: ExpProps) => {
     <Grid item md={6} style={{ padding: "25px 15px 25px 15px" }}>
       <Grid container>
         <Grid item xs={12}>
-          <Typography component={"h2"} variant={"h4"}>
+          <Typography component={"p"} variant={"h4"}>
             {" "}
-            {exp.debut} | {exp.fin}
+            {exp.fin ? exp.debut + " > " + exp.fin : "Depuis " + exp.debut}
           </Typography>
           <Typography component={"h2"} variant={"h3"}>
             {exp.entreprise}

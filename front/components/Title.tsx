@@ -36,7 +36,7 @@ const Title = () => {
               component={"h2"}
               className={classes.mainText}
             >
-              Fontend / Backend
+              Frontend / Backend
             </Typography>
             <Typography
               variant={"h3"}

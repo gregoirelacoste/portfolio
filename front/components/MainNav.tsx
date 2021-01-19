@@ -18,13 +18,16 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-const CustomNavLink = ({ to, children, ...rest }) => {
+const CustomNavLink = React.forwardRef(function CustomNavLink(
+  { to, children, ...rest }: any,
+  ref: any
+) {
   return (
-    <NavLink activeStyle={{ ...style.active }} to={to} {...rest}>
+    <NavLink {...rest} activeStyle={{ ...style.active }} to={to} ref={ref}>
       {children}
     </NavLink>
   );
-};
+});
 
 const message = "Pour scroller, utilisez le drag ans drop";
 

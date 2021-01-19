@@ -17,11 +17,19 @@ const Footer = () => {
         className={footer}
       >
         <Grid item sm={6}>
-          <Typography variant={"h4"} component={"p"}>
+          <Typography
+            style={{ wordSpacing: "6px" }}
+            variant={"h4"}
+            component={"p"}
+          >
             JS | React | Node | PHP | Wordpress | Laravel
           </Typography>
           <Box m={1} />
-          <Typography variant={"body1"} component={"p"}>
+          <Typography
+            style={{ wordSpacing: "5px" }}
+            variant={"body1"}
+            component={"p"}
+          >
             App | Métier | Vitrine | E-commerce
           </Typography>
         </Grid>
