@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { config } from "../../server/config";
+import CustomTooltip from "../CustomTooltip";
 
 const useStyle = makeStyles((theme) => ({
   profil: {
@@ -31,13 +32,15 @@ const Profil = () => {
         <Grid item>
           <div className={classes.profil} />
           <Box m={1} />
-          <Typography
-            component={"a"}
-            href={"mailto:gregoire@level-one.fr"}
-            variant={"body1"}
-          >
-            gregoire@level-one.fr
-          </Typography>
+          <CustomTooltip text={"C'est mon mail ! Cliquez pour me contacter"}>
+            <Typography
+              component={"a"}
+              href={"mailto:gregoire@level-one.fr"}
+              variant={"body1"}
+            >
+              gregoire@level-one.fr
+            </Typography>
+          </CustomTooltip>
         </Grid>
       </Grid>
     </Grid>

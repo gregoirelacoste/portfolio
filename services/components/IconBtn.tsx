@@ -2,6 +2,7 @@ import React from "react";
 import { IconButton, IconButtonProps } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { PositionElement } from "../../webpack/types/position";
+import CustomTooltip from "../../front/CustomTooltip";
 
 const useStyle = makeStyles((theme) => ({
   btn: (props: IconBtnProps) => ({
@@ -35,6 +36,7 @@ interface IconBtnProps extends IconButtonProps {
   position: PositionElement;
   positionType?: "fixed" | "absolute";
   href?: string;
+  tooltip?: string;
 }
 
 const IconBtn = (props: IconBtnProps) => {
@@ -43,10 +45,18 @@ const IconBtn = (props: IconBtnProps) => {
 
   const elementPosition =
     props.position === "TopRight" ? classes.topRight : classes.bottomRight;
+  if (!props.tooltip)
+    return (
+      <IconButton className={`${classes.btn} ${elementPosition}`} {...rest}>
+        {props.icon}
+      </IconButton>
+    );
   return (
-    <IconButton className={`${classes.btn} ${elementPosition}`} {...rest}>
-      {props.icon}
-    </IconButton>
+    <CustomTooltip text={props.tooltip}>
+      <IconButton className={`${classes.btn} ${elementPosition}`} {...rest}>
+        {props.icon}
+      </IconButton>
+    </CustomTooltip>
   );
 };
 
