@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import useMainStyles from "../theme/mainStyles";
@@ -18,6 +18,14 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
+const CustomNavLink = ({ to, children, ...rest }) => {
+  return (
+    <NavLink activeStyle={{ ...style.active }} to={to} {...rest}>
+      {children}
+    </NavLink>
+  );
+};
+
 const message = "Pour scroller, utilisez le drag ans drop";
 
 const MainNav = () => {
@@ -29,22 +37,24 @@ const MainNav = () => {
         <ul className={classes.ul}>
           <li>
             <Tooltip title={message}>
-              <Link to={LINKS.home}>Accueil</Link>
+              <CustomNavLink to={LINKS.home} exact>
+                Accueil
+              </CustomNavLink>
             </Tooltip>
           </li>
           <li>
             <Tooltip title={message}>
-              <Link to={LINKS.about}>A propos</Link>
+              <CustomNavLink to={LINKS.about}>A propos</CustomNavLink>
             </Tooltip>
           </li>
           <li>
             <Tooltip title={message}>
-              <Link to={LINKS.ref}>Références</Link>
+              <CustomNavLink to={LINKS.ref}>Références</CustomNavLink>
             </Tooltip>
           </li>
           <li>
             <Tooltip title={message}>
-              <Link to={LINKS.exp}>Expériences</Link>
+              <CustomNavLink to={LINKS.exp}>Expériences</CustomNavLink>
             </Tooltip>
           </li>
         </ul>

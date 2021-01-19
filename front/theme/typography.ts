@@ -16,8 +16,20 @@ export const style = {
     fontSize: "1.2rem",
     fontFamily: "Rubik Mono One",
     transition: "0.7s",
+    "&:active": {
+      color: palette.secondary.main,
+      "&:hover": {
+        color: palette.primary.main,
+      },
+    },
     "&:hover": {
       color: palette.secondary.main,
+    },
+  },
+  active: {
+    color: palette.secondary.main,
+    "&:hover": {
+      color: palette.primary.main,
     },
   },
 };
