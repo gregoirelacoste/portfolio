@@ -14,7 +14,7 @@ const Experiences = () => {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <PageLayout maxWidth={"xl"}>
+    <PageLayout maxWidth={"lg"}>
       <Box m={3} />
       <Typography component={"h1"} variant={"h1"}>
         {mobile ? "Mes XPs" : "Expériences"}

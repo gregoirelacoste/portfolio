@@ -29,14 +29,14 @@ const Title = () => {
               component={"h1"}
               className={classes.mainText}
             >
-              Full stack
+              Développeur Freelance
             </Typography>
             <Typography
               variant={"h2"}
               component={"h2"}
               className={classes.mainText}
             >
-              Freelance Dev
+              Fontend / Backend
             </Typography>
             <Typography
               variant={"h3"}

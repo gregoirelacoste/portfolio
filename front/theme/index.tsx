@@ -4,8 +4,9 @@ import typography from "./typography";
 
 let theme = createMuiTheme({
   palette,
+  // @ts-ignore
   typography,
 });
-theme = responsiveFontSizes(theme, { factor: 3 });
+theme = responsiveFontSizes(theme, { factor: 2 });
 
 export default theme;
