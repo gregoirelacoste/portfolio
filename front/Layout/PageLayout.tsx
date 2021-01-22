@@ -4,7 +4,7 @@ import { Container } from "@material-ui/core";
 import useMainStyles from "../theme/mainStyles";
 
 interface PageLayoutProps {
-  children: JSX.Element[];
+  children: JSX.Element[] | JSX.Element;
   maxWidth?: "xs" | "sm" | "md" | "lg" | "xl" | false;
 }
 

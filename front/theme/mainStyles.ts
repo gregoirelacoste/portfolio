@@ -8,9 +8,6 @@ const useMainStyles = makeStyles((theme: Theme) => {
       background: theme.palette.primary.dark,
       color: "#fff",
     },
-    homeContainer: {
-      height: `calc(100% - ${footer.md})`,
-    },
     nav: {
       width: "100%",
       textAlign: "right",
