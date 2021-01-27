@@ -20,7 +20,7 @@ const useStyle = makeStyles((theme) => ({
   ul: {
     padding: theme.spacing(3),
     textAlign: "center",
-    "& a": { ...style.a, fontSize: "2rem" },
+    "& a": { ...style(theme).a, fontSize: "2rem" },
     "& li": {
       padding: "20px",
     },

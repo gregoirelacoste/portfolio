@@ -7,7 +7,7 @@ declare module "@material-ui/core/styles/createPalette" {
   }
 }
 
-const palette = {
+const dark = {
   primary: { main: "#fff", light: "#aeaeae", dark: "#282728" },
   secondary: { main: "#00b8de", light: "#bae8f1", dark: "#04434f" },
   neutral: {
@@ -16,4 +16,15 @@ const palette = {
   },
   common: { black: "#121212", white: "#fff" },
 };
-export default palette;
+
+const light = {
+  secondary: { main: "#fff", light: "#aeaeae", dark: "#282728" },
+  primary: { main: "#00b8de", light: "#bae8f1", dark: "#04434f" },
+  neutral: {
+    main: "#000",
+    dark: "#18181a",
+  },
+  common: { black: "#121212", white: "#fff" },
+};
+
+export { dark, light };

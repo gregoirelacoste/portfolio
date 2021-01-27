@@ -10,6 +10,7 @@ import Experiences from "../Views/Experiences";
 import { useTransition, animated } from "react-spring";
 import { springEffect } from "../theme/effect";
 import withTracker from "../../services/googleAnalytics/withTracker";
+import { useTheme } from "@material-ui/core";
 
 const Routes = () => {
   return (
@@ -23,11 +24,12 @@ const Routes = () => {
 
 const RoutesEffect = () => {
   const { location } = useContext(__RouterContext);
+  const theme = useTheme();
   const transitions = useTransition(
     location,
     (location) => location.pathname,
     // @ts-ignore
-    springEffect.pageTransition
+    springEffect(theme).pageTransition
   );
   return (
     <>

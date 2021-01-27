@@ -5,12 +5,12 @@ import useMainStyles from "../theme/mainStyles";
 import { style } from "../theme/typography";
 import { LINKS } from "../config";
 import MenuBurger from "../../services/components/MenuBurger";
-import { Tooltip } from "@material-ui/core";
+import { Tooltip, useTheme } from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
   ul: {
     padding: theme.spacing(3),
-    "& a": style.a,
+    "& a": style(theme).a,
     "& li": {
       display: "inline-block",
       paddingRight: "20px",
@@ -22,8 +22,14 @@ const CustomNavLink = React.forwardRef(function CustomNavLink(
   { to, children, ...rest }: any,
   ref: any
 ) {
+  const theme = useTheme();
   return (
-    <NavLink {...rest} activeStyle={{ ...style.active }} to={to} ref={ref}>
+    <NavLink
+      {...rest}
+      activeStyle={{ ...style(theme).active }}
+      to={to}
+      ref={ref}
+    >
       {children}
     </NavLink>
   );

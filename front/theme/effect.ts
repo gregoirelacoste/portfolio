@@ -1,6 +1,4 @@
-import theme from "./index";
-
-export const springEffect = {
+export const springEffect = (theme) => ({
   pageTransition: {
     from: {
       position: "absolute",
@@ -26,4 +24,4 @@ export const springEffect = {
       margin: 0,
     },
   },
-};
+});

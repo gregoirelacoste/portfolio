@@ -1,4 +1,4 @@
-import palette from "./palette";
+import { Theme } from "@material-ui/core/styles";
 
 declare module "@material-ui/core/styles/createPalette" {
   interface Palette {
@@ -12,30 +12,30 @@ declare module "@material-ui/core/styles/createPalette" {
 const headerTypo = "Lato, sans-serif";
 const mainTypo = "Raleway, sans serif";
 
-export const style = {
+export const style = (theme: Theme) => ({
   a: {
-    color: palette.primary.main,
+    color: theme.palette.primary.main,
     textDecoration: "none",
     fontSize: "1.2rem",
     fontFamily: headerTypo,
     transition: "0.7s",
     "&:active": {
-      color: palette.secondary.main,
+      color: theme.palette.secondary.main,
       "&:hover": {
-        color: palette.primary.main,
+        color: theme.palette.primary.main,
       },
     },
     "&:hover": {
-      color: palette.secondary.main,
+      color: theme.palette.secondary.main,
     },
   },
   active: {
-    color: palette.secondary.main,
+    color: theme.palette.secondary.main,
     "&:hover": {
-      color: palette.primary.main,
+      color: theme.palette.primary.main,
     },
   },
-};
+});
 
 const typography = {
   fontFamily: mainTypo,
@@ -55,7 +55,6 @@ const typography = {
   },
   h3: {
     fontSize: "3.5rem",
-    color: palette.secondary.main,
     fontFamily: headerTypo,
     fontWeight: 100,
   },
