@@ -5,6 +5,9 @@ import React from "react";
 import MuiAlert from "@material-ui/lab/Alert";
 import Modal from "../Modal";
 import { Typography } from "@material-ui/core";
+import { useReactiveVar } from "@apollo/client";
+import { feedbackVar } from "../../../front/graphql/cache/variables/feedback.var";
+import { initFeedbackState } from "./feedbackState";
 
 export interface FeedbackType {
   isOpen: boolean;
@@ -20,28 +23,21 @@ export interface FeedbackType {
   };
 }
 
-interface FeedbackProps extends FeedbackType {
-  setOpen: (a: any) => any;
-}
-
 const Alert = (props: any) => {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 };
 
-const Feedback = ({
-  isOpen,
-  message,
-  error,
-  type = "snackbar",
-  modal,
-  setOpen,
-}: FeedbackProps) => {
+const Feedback = () => {
+  const { isOpen, message, error, type = "snackbar", modal } = useReactiveVar(
+    feedbackVar
+  );
+
   if (type === "modal" && modal)
     return (
       <Modal
         title={modal.title}
         isOpen={isOpen}
-        setOpen={setOpen}
+        setOpen={feedbackVar}
         onClick={modal.onClick}
         buttonActionText={modal.btnText || "Fermer"}
         buttonCloseText={modal.buttonCloseText}
@@ -64,7 +60,7 @@ const Feedback = ({
             aria-label="close"
             color="inherit"
             onClick={() => {
-              setOpen(false);
+              feedbackVar(initFeedbackState);
             }}
           >
             <CloseIcon fontSize="small" />
@@ -74,7 +70,7 @@ const Feedback = ({
         <Alert
           severity={error ? "error" : "success"}
           onClose={() => {
-            setOpen(false);
+            feedbackVar(initFeedbackState);
           }}
         >
           <Typography variant={"caption"}> {message}</Typography>

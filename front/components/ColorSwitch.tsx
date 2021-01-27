@@ -1,6 +1,9 @@
 import { FormControlLabel, Switch } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { themeType } from "../theme/switchTheme";
+import { useReactiveVar } from "@apollo/client";
+import { themeVar } from "../graphql/cache/variables/theme.var";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,29 +14,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ColorSwitch = ({
-  light,
-  setTheme,
-}: {
-  light: boolean;
-  setTheme: (themeState: boolean) => void;
-}) => {
+const ColorSwitch = () => {
+  const theme = useReactiveVar(themeVar);
   const classes = useStyles();
-  const handleChange = () => {
-    setTheme(!light);
+
+  const handleChange = (e) => {
+    const getType =
+      e.target.value === "true" ? themeType.light : themeType.dark;
+    themeVar({
+      type: getType,
+    });
   };
+
   return (
     <FormControlLabel
       className={classes.root}
       control={
         <Switch
-          checked={light}
           onChange={handleChange}
           name="checkedB"
           color="secondary"
+          value={theme.type !== themeType.light}
         />
       }
-      label={light ? "Dark Theme ?" : "Light Theme ?"}
+      label={theme.type === themeType.dark ? "Dark Theme ?" : "Light Theme ?"}
     />
   );
 };

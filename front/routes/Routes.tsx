@@ -10,15 +10,26 @@ import Experiences from "../Views/Experiences";
 import { useTransition, animated } from "react-spring";
 import { springEffect } from "../theme/effect";
 import withTracker from "../../services/googleAnalytics/withTracker";
-import { useTheme } from "@material-ui/core";
+import { ThemeProvider, useTheme } from "@material-ui/core";
+import { useReactiveVar } from "@apollo/client";
+import { themeVar } from "../graphql/cache/variables/theme.var";
+import { getTheme } from "../theme/switchTheme";
+import ColorSwitch from "../components/ColorSwitch";
+import Feedback from "../../services/components/Feedback/Feedback";
 
 const Routes = () => {
+  const theme = useReactiveVar(themeVar);
+
   return (
-    <Router>
-      <Layout>
-        <RoutesEffect />
-      </Layout>
-    </Router>
+    <ThemeProvider theme={getTheme(theme.type)}>
+      <Router>
+        <Layout>
+          <RoutesEffect />
+        </Layout>
+      </Router>
+      <ColorSwitch />
+      <Feedback />
+    </ThemeProvider>
   );
 };
 

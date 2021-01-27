@@ -18,8 +18,8 @@ const dark = {
 };
 
 const light = {
-  secondary: { main: "#fff", light: "#aeaeae", dark: "#282728" },
   primary: { main: "#00b8de", light: "#bae8f1", dark: "#04434f" },
+  secondary: { main: "#fff", light: "#aeaeae", dark: "#282728" },
   neutral: {
     main: "#000",
     dark: "#18181a",
@@ -27,4 +27,14 @@ const light = {
   common: { black: "#121212", white: "#fff" },
 };
 
-export { dark, light };
+const pink = {
+  primary: { main: "#e23bbe", light: "#d1addd", dark: "#4a055d" },
+  secondary: { main: "#fff", light: "#aeaeae", dark: "#282728" },
+  neutral: {
+    main: "#000",
+    dark: "#18181a",
+  },
+  common: { black: "#121212", white: "#fff" },
+};
+
+export { dark, light, pink };
