@@ -1,15 +1,24 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { IconButton } from "@material-ui/core";
 import useMainStyles from "../theme/mainStyles";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  icon: {
+    marginRight: theme.spacing(2),
+  },
+}));
 
 const Footer = () => {
   const { footer } = useMainStyles();
+  const classes = useStyles();
+
   return (
-    <Container maxWidth={"xl"}>
+    <Grid item xs={12}>
       <Grid
         container
         justify={"center"}
@@ -38,6 +47,7 @@ const Footer = () => {
             href={"https://github.com/gregoirelacoste"}
             color={"secondary"}
             target={"_blank"}
+            className={classes.icon}
           >
             <GitHubIcon fontSize="large" />
           </IconButton>
@@ -45,6 +55,7 @@ const Footer = () => {
             href={"https://twitter.com/gregoirelacoste"}
             color={"secondary"}
             target={"_blank"}
+            className={classes.icon}
           >
             <TwitterIcon fontSize="large" />
           </IconButton>
@@ -52,12 +63,13 @@ const Footer = () => {
             href={"https://www.linkedin.com/in/gregoirelacoste/"}
             color={"secondary"}
             target={"_blank"}
+            className={classes.icon}
           >
             <LinkedInIcon fontSize="large" />
           </IconButton>
         </Grid>
       </Grid>
-    </Container>
+    </Grid>
   );
 };
 

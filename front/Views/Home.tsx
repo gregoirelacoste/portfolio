@@ -3,26 +3,45 @@ import "../styles.css";
 import { Grid } from "@material-ui/core";
 import Title from "../components/Title";
 import Profil from "../components/Profil";
-import useMainStyles from "../theme/mainStyles";
 import Footer from "../components/Footer";
 import PageLayout from "../Layout/PageLayout";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyle = makeStyles({
+  container: {
+    marginTop: "5%",
+    marginBottom: "5%",
+  },
+});
 
 const Home = () => {
-  const { homeContainer } = useMainStyles();
-
+  const classes = useStyle();
   return (
-    <PageLayout>
+    <PageLayout
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: " space-around",
+      }}
+    >
       <Grid
         container
         justify="center"
         alignContent={"center"}
         alignItems={"center"}
-        className={homeContainer}
+        className={classes.container}
       >
         <Title />
         <Profil />
       </Grid>
-      <Footer />
+      <Grid
+        container
+        justify="center"
+        alignContent={"center"}
+        alignItems={"center"}
+      >
+        <Footer />
+      </Grid>
     </PageLayout>
   );
 };

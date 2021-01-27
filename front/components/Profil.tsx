@@ -16,9 +16,13 @@ const useStyle = makeStyles((theme) => ({
       height: "230px",
       width: "230px",
     },
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       height: "400px",
       width: "400px",
+    },
+    [theme.breakpoints.down("md")]: {
+      height: "300px",
+      width: "300px",
     },
   },
 }));
