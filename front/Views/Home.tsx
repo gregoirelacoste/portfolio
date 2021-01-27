@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles.css";
-import { Grid } from "@material-ui/core";
+import { Grid, useMediaQuery, useTheme } from "@material-ui/core";
 import Title from "../components/Title";
 import Profil from "../components/Profil";
 import Footer from "../components/Footer";
@@ -16,12 +16,15 @@ const useStyle = makeStyles({
 
 const Home = () => {
   const classes = useStyle();
+  const theme = useTheme();
+  const md = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <PageLayout
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: " space-around",
+        justifyContent: md ? "start" : "space-around",
+        marginTop: md ? "2em" : null,
       }}
     >
       <Grid
