@@ -1,12 +1,13 @@
+
 [
   {
-    "date": 2020,
-    "client": "Arto - Kiwi",
-    "details": "Centre Culturel de Ramonville,",
-    "projet": "un site vitrine et un agenda d'évenements",
-    "techno": "Wordpress sur mesure, plugin ACF",
+    "date": 2021,
+    "client": "Dismoi.io",
+    "details": "Conseils et entraide directement sur les pages web que vous visitez",
+    "projet": "extension chrome/firefox, app React",
+    "techno": "Front:React, Redux - Back:Symphony",
     "remarque": "En équipe",
-    "role": "Développment wordpress et custom thème "
+    "role": "FullStack developer"
   },
   {
     "date": 2020,
